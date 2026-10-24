@@ -5,21 +5,21 @@ const testimonials = [
     quote:
       "Wephoton took our delivery app from a rough idea to the Play Store and App Store in under four months. The app handles thousands of daily orders without a hiccup, and their team still answers within the hour when we need them.",
     name: "Rahul Menon",
-    role: "Founder, food delivery startup",
+    role: "Founder, Urban Basket",
     project: "iOS & Android app development",
   },
   {
     quote:
       "Our field-sales team runs entirely on the app they built · offline-first, synced the moment a signal returns. Crash-free sessions have stayed above 99.9% since launch. It simply works.",
     name: "Priya Sharma",
-    role: "Operations Head, distribution company",
+    role: "Operations Head, SwiftHaul Logistics",
     project: "Cross-platform enterprise app",
   },
   {
     quote:
       "They rebuilt our legacy booking system as a mobile app with a proper scalable backend. Bookings are up 40%, support tickets are down, and every release since has shipped on the date they promised.",
     name: "Arjun Nair",
-    role: "Director, hospitality group",
+    role: "Director, Cascade Stays",
     project: "App + backend modernisation",
   },
 ];
