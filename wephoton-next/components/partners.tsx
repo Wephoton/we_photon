@@ -1,24 +1,14 @@
-import {
-  Building2,
-  Landmark,
-  Store,
-  Factory,
-  Hotel,
-  Stethoscope,
-  GraduationCap,
-  Truck,
-} from "lucide-react";
-
-/* Placeholder partner marks · swap each icon + name for a real partner logo image */
+/* Partner logos · drop square (1:1) images into public/partners/ using the filenames below,
+   replacing the placeholder SVGs. If a logo is a PNG/JPG/WebP, change its extension here. */
 const partners = [
-  { icon: Building2, name: "Northgate Group", color: "from-sky-400 to-blue-600" },
-  { icon: Store, name: "Urban Basket", color: "from-emerald-400 to-green-600" },
-  { icon: Hotel, name: "Cascade Stays", color: "from-teal-400 to-cyan-600" },
-  { icon: Stethoscope, name: "MediBridge", color: "from-rose-400 to-red-600" },
-  { icon: Factory, name: "Kore Industries", color: "from-orange-400 to-red-500" },
-  { icon: GraduationCap, name: "Scholars Point", color: "from-violet-400 to-purple-600" },
-  { icon: Truck, name: "SwiftHaul Logistics", color: "from-amber-400 to-orange-600" },
-  { icon: Landmark, name: "Vertex Capital", color: "from-indigo-400 to-blue-700" },
+  { logo: "/partners/northgate-group.svg", name: "Northgate Group" },
+  { logo: "/partners/urban-basket.svg", name: "Urban Basket" },
+  { logo: "/partners/cascade-stays.svg", name: "Cascade Stays" },
+  { logo: "/partners/medibridge.svg", name: "MediBridge" },
+  { logo: "/partners/kore-industries.svg", name: "Kore Industries" },
+  { logo: "/partners/scholars-point.svg", name: "Scholars Point" },
+  { logo: "/partners/swifthaul-logistics.svg", name: "SwiftHaul Logistics" },
+  { logo: "/partners/vertex-capital.svg", name: "Vertex Capital" },
 ];
 
 export default function Partners() {
@@ -38,17 +28,21 @@ export default function Partners() {
         <div aria-hidden className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-abyss to-transparent" />
 
         <ul className="flex w-max animate-marquee gap-6 group-hover:[animation-play-state:paused]">
-          {track.map(({ icon: Icon, name, color }, i) => (
+          {track.map(({ logo, name }, i) => (
             <li
               key={`${name}-${i}`}
               aria-hidden={i >= partners.length}
               className="flex aspect-square w-44 flex-col items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-4 md:backdrop-blur-md"
             >
-              <span
-                className={`flex aspect-square w-20 items-center justify-center rounded-2xl bg-gradient-to-br ${color} shadow-lg`}
-              >
-                <Icon className="size-9 text-white" aria-hidden />
-              </span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={logo}
+                alt={i < partners.length ? `${name} logo` : ""}
+                width={80}
+                height={80}
+                loading="lazy"
+                className="aspect-square w-20 rounded-2xl object-cover shadow-lg"
+              />
               <span className="text-center font-display text-sm font-semibold tracking-wide text-platinum/90">
                 {name}
               </span>
