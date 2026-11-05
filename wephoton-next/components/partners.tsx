@@ -1,14 +1,14 @@
 /* Partner logos · drop square (1:1) images into public/partners/ using the filenames below,
    replacing the placeholder SVGs. If a logo is a PNG/JPG/WebP, change its extension here. */
 const partners = [
-  { logo: "/partners/northgate-group.svg", name: "Northgate Group" },
-  { logo: "/partners/urban-basket.svg", name: "Urban Basket" },
-  { logo: "/partners/cascade-stays.svg", name: "Cascade Stays" },
-  { logo: "/partners/medibridge.svg", name: "MediBridge" },
-  { logo: "/partners/kore-industries.svg", name: "Kore Industries" },
-  { logo: "/partners/scholars-point.svg", name: "Scholars Point" },
-  { logo: "/partners/swifthaul-logistics.svg", name: "SwiftHaul Logistics" },
-  { logo: "/partners/vertex-capital.svg", name: "Vertex Capital" },
+  { logo: "/partners/northgate-group.png", name: "Northgate Group" },
+  { logo: "/partners/urban-basket.png", name: "Urban Basket" },
+  { logo: "/partners/cascade-stays.png", name: "Cascade Stays" },
+  { logo: "/partners/medibridge.png", name: "MediBridge" },
+  { logo: "/partners/kore-industries.png", name: "Kore Industries" },
+  { logo: "/partners/scholars-point.png", name: "Scholars Point" },
+  { logo: "/partners/swifthaul-logistics.png", name: "SwiftHaul Logistics" },
+  { logo: "/partners/vertex-capital.png", name: "Vertex Capital" },
 ];
 
 export default function Partners() {
@@ -43,9 +43,6 @@ export default function Partners() {
                 loading="lazy"
                 className="aspect-square w-20 rounded-2xl object-cover shadow-lg"
               />
-              <span className="text-center font-display text-sm font-semibold tracking-wide text-platinum/90">
-                {name}
-              </span>
             </li>
           ))}
         </ul>
