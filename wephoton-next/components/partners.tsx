@@ -32,16 +32,16 @@ export default function Partners() {
             <li
               key={`${name}-${i}`}
               aria-hidden={i >= partners.length}
-              className="flex aspect-square w-44 flex-col items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-4 md:backdrop-blur-md"
+              className="flex aspect-square w-60 flex-col items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-4 md:backdrop-blur-md"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={logo}
                 alt={i < partners.length ? `${name} logo` : ""}
-                width={80}
-                height={80}
+                width={144}
+                height={144}
                 loading="lazy"
-                className="aspect-square w-20 rounded-2xl object-cover shadow-lg"
+                className="aspect-square w-36 rounded-2xl object-cover shadow-lg"
               />
             </li>
           ))}
