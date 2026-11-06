@@ -32,7 +32,7 @@ export default function Partners() {
             <li
               key={`${name}-${i}`}
               aria-hidden={i >= partners.length}
-              className="flex shrink-0 items-center justify-center"
+              className="flex shrink-0 overflow-hidden rounded-2xl border border-[#bab9b6]/40 bg-[#bab9b6]/70 md:backdrop-blur-md"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -41,7 +41,7 @@ export default function Partners() {
                 width={144}
                 height={144}
                 loading="lazy"
-                className="aspect-square w-36 rounded-2xl object-cover shadow-lg"
+                className="aspect-square w-36 object-cover"
               />
             </li>
           ))}
