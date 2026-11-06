@@ -7,7 +7,7 @@ import { Rocket } from "lucide-react";
 export const metadata: Metadata = {
   title: "Dawingo Multiverse · Our Products",
   description:
-    "The Dawingo Multiverse: Wephoton's own SaaS product family · 19 platforms for restaurants, hotels, schools, hospitals, retail, and more. Dawingo Resto is live now.",
+    "The Dawingo Multiverse: Wephoton's own SaaS product family · Dawingo Resto is live now, with more products coming soon.",
 };
 
 export default function DawingoPage() {
@@ -37,7 +37,7 @@ export default function DawingoPage() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-platinum">
             One product family for every operation a business runs · built,
             hosted, and supported entirely by Wephoton. Dawingo Resto is live
-            in production today; eighteen more worlds are on the way.
+            in production today; more products are coming soon.
           </p>
 
           <div className="mt-14">
