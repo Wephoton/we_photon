@@ -32,7 +32,7 @@ export default function Partners() {
             <li
               key={`${name}-${i}`}
               aria-hidden={i >= partners.length}
-              className="flex aspect-square w-60 flex-col items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/[0.03] p-4 md:backdrop-blur-md"
+              className="flex aspect-square w-48 flex-col items-center justify-center gap-4 rounded-2xl border border-[#bab9b6]/40 bg-[#bab9b6]/70 p-4 md:backdrop-blur-md"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
