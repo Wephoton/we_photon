@@ -1,0 +1,6 @@
+
+# tool directories
+.claude/
+.playwright-mcp/
+.serena/
+.tokensave/
