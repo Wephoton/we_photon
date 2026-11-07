@@ -72,9 +72,9 @@ export default function DawingoGrid() {
           </div>
           <ComingSoonTag />
         </div>
-        <h3 className="mt-6 font-display text-2xl font-bold">Others</h3>
+        <h3 className="mt-6 font-display text-2xl font-bold">More...</h3>
         <p className="mt-2 leading-relaxed text-platinum/90">
-          More Dawingo products are on the way. Stay tuned.
+          More of the Dawingo universe is on the way. Stay tuned.
         </p>
       </article>
     </div>

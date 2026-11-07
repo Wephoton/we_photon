@@ -5,7 +5,7 @@ import DawingoGrid from "@/components/dawingo";
 import { Rocket } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Dawingo Multiverse · Our Products",
+  title: "Dawingo Multiverse · Our Universe",
   description:
     "The Dawingo Multiverse: Wephoton's own SaaS product family · Dawingo Resto is live now, with more products coming soon.",
 };
