@@ -59,7 +59,7 @@ export default function DawingoGrid() {
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full bg-amber px-6 py-3 font-display text-sm font-semibold text-abyss shadow-[0_0_24px_rgba(237,167,53,0.3)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(237,167,53,0.55)]"
             >
-              View
+              Know More
             </a>
           </div>
         </div>
