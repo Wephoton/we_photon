@@ -21,8 +21,9 @@ export default function DawingoTeaser() {
                 The Dawingo Multiverse
               </h2>
               <p className="mt-5 max-w-xl leading-relaxed text-platinum">
-                Our proprietary SaaS family · Dawingo Resto is live today for
-                restaurants, with more products coming soon.
+                Our proprietary SaaS family · Dawingo Resto for restaurants and
+                Dawingo Radiowaves for live radio and podcasts are live today,
+                with more products coming soon.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link

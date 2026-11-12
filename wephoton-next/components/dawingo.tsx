@@ -20,11 +20,12 @@ function ComingSoonTag() {
 }
 
 export default function DawingoGrid() {
-  const [resto] = dawingoProducts;
+  const [resto, radiowaves] = dawingoProducts;
   const RestoIcon = resto.icon;
+  const RadioIcon = radiowaves.icon;
 
   return (
-    <div className="grid auto-rows-fr gap-4 sm:grid-cols-2">
+    <div className="grid gap-4 sm:grid-cols-2">
       {/* Featured live cell · Dawingo Resto, 2×2 square */}
       <article className="group relative overflow-hidden rounded-3xl border border-amber/30 bg-white/[0.04] p-8 md:backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-amber/60 hover:shadow-[0_0_56px_rgba(237,167,53,0.25)]">
         <div
@@ -59,13 +60,54 @@ export default function DawingoGrid() {
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full bg-amber px-6 py-3 font-display text-sm font-semibold text-abyss shadow-[0_0_24px_rgba(237,167,53,0.3)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(237,167,53,0.55)]"
             >
-              Know More
+              See How It Works
             </a>
           </div>
         </div>
       </article>
 
-      <article className="relative flex flex-col justify-center overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 md:backdrop-blur-md">
+      {/* Live cell · Dawingo Radiowaves */}
+      <article className="group relative overflow-hidden rounded-3xl border border-amber/30 bg-white/[0.04] p-8 md:backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-amber/60 hover:shadow-[0_0_56px_rgba(237,167,53,0.25)]">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -top-20 -right-20 h-64 w-64 rounded-full bg-[radial-gradient(closest-side,rgba(237,167,53,0.2),transparent)]"
+        />
+        <div className="relative flex h-full flex-col">
+          <div className="flex items-start justify-between gap-4">
+            <div className="inline-flex rounded-2xl border border-amber/30 bg-amber/10 p-3">
+              <RadioIcon className="size-7 text-amber" aria-hidden />
+            </div>
+            <LiveTag />
+          </div>
+
+          <Image
+            src="/brand/dawingo-radiowaves.png"
+            alt="Dawingo Radiowaves"
+            width={280}
+            height={89}
+            className="mt-8 h-14 w-auto self-start"
+          />
+
+          <p className="mt-6 leading-relaxed text-platinum">
+            {radiowaves.tagline}. Thousands of live stations and podcasts from
+            every country and genre, free to stream in your browser · live
+            today.
+          </p>
+
+          <div className="mt-auto pt-8">
+            <a
+              href="https://radiowaves.dawingo.run.place"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-full bg-amber px-6 py-3 font-display text-sm font-semibold text-abyss shadow-[0_0_24px_rgba(237,167,53,0.3)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(237,167,53,0.55)]"
+            >
+              Listen Now
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article className="relative flex flex-col justify-center overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-8 md:backdrop-blur-md sm:col-span-2">
         <div className="flex items-start justify-between gap-3">
           <div className="inline-flex rounded-2xl border border-white/10 bg-white/5 p-3">
             <Layers3 className="size-7 text-platinum" aria-hidden />
